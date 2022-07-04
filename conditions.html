@@ -12,12 +12,24 @@
         // }
 
         // Else Statement
-        const hour = new Date().getHours();
+        // const hour = new Date().getHours();
+        // let greeting;
+        // if (hour < 18) {
+        //     greeting = "Good Day";
+        // } else {
+        //     greeting = "Good Evening";
+        // }
+        // document.getElementById("demo").innerHTML = greeting;
+
+        // Else If Statement
+        const time = new Date().getHours();
         let greeting;
-        if (hour < 18) {
-            greeting = "Good Day";
+        if (time < 10) {
+            greeting = "Good morning";
+        } else if (time < 18) {
+            greeting = "Good day";
         } else {
-            greeting = "Good Evening";
+            greeting = "Good evening";
         }
         document.getElementById("demo").innerHTML = greeting;
     </script>
